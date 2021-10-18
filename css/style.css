@@ -106,7 +106,8 @@ li:not(:last-child) {
 .banner-btn{
     position: relative;
     left: 50%;
-    transform: translate(-50%, 50%);
+    top: 2.5em;
+    transform: translate(-50%, -50%);
     background: black;
     border:black 1px solid;
     color: white;
