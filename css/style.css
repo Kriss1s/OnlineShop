@@ -115,6 +115,7 @@ li:not(:last-child) {
     box-sizing: border-box;
     padding: 0.5em 1em;
     font-size: medium;
+    cursor: pointer;
 }
 .banner-btn:hover{
 background: transparent;
