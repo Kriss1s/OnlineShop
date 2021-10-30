@@ -1,0 +1,50 @@
+@import "basic.scss";
+@import "utilities.scss";
+@import "banner.scss";
+@import "gallery.scss";
+@import "head.scss";
+@import "slider.scss";
+@import "./animations.scss";
+
+
+@font-face { font-family: roboto-mono;  src: url('Roboto_Mono/static/RobotoMono-Regular.ttf'); } 
+
+
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    color: white;
+}
+footer> p{
+    font-size: 10px;
+}
+
+.icons{
+    padding: 3em 0;
+    display: flex;
+    flex-direction: row;
+    align-items: space-around;
+    
+}
+
+.icon{
+    padding: 1em;
+    display: inline-block;
+    width: 1.5em;
+    color: white;
+    filter:invert(1);
+}
+
+.icon:hover{
+    filter: invert(0) hue-rotate(160deg);
+}
+

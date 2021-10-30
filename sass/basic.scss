@@ -1,0 +1,18 @@
+ul,li{
+    list-style: none;
+margin: 0 0;
+padding: 0;
+}
+body {
+    margin: 0;
+    font-family: 'roboto-mono';
+    color: black;
+    background: fixed url(../../images/background.jpg);
+}
+
+.glass{
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
