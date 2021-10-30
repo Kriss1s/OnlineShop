@@ -15,6 +15,17 @@ body {
   backdrop-filter: blur(5px);
   border: 1px solid rgba(0, 0, 0, 0.1); }
 
+@font-face {
+  font-family: roboto-mono;
+  src: url("Roboto_Mono/static/RobotoMono-Regular.ttf"); }
+
+.header-icon {
+  color: black;
+  width: 22px; }
+
+.header-icon-2 {
+  width: 32px; }
+
 .banner {
   padding: 2em 5%;
   display: flex;
@@ -133,7 +144,9 @@ body {
 .logo {
   font-size: 22px;
   font-family: 'roboto-mono';
-  letter-spacing: 0.5em; }
+  letter-spacing: 0.5em;
+  text-decoration: none;
+  color: black; }
 
 .logo > span {
   color: red; }
@@ -145,7 +158,8 @@ body {
   font-size: 22px; }
 
 .header-items {
-  position: relative; }
+  position: relative;
+  z-index: 10; }
 
 .header-item:not(:last-child) {
   margin: 0 60px; }
@@ -159,8 +173,7 @@ body {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(15px);
   border: 1px solid rgba(0, 0, 0, 0.5);
-  border-top: none;
-  z-index: 2; }
+  border-top: none; }
 
 .header-item-1-dropdown::before {
   content: "";
@@ -192,12 +205,20 @@ body {
   border: 1px red solid;
   background: rgba(255, 255, 255, 0.6); }
 
+.sign-menu {
+  display: flex;
+  flex-direction: row;
+  width: 5em;
+  display: flex;
+  justify-content: space-between; }
+
 .slider {
   width: 100%;
   height: 350px;
   overflow: hidden;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(0, 0, 0, 0.1); }
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: -1; }
 
 .slider-image {
   width: 100%;
@@ -243,6 +264,56 @@ body {
   100% {
     opacity: 1;
     transform: scale(1); } }
+
+.sign-in {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  height: 100vh;
+  margin: 4em auto;
+  z-index: -1; }
+  .sign-in .sign-in-block-1 {
+    width: inherit;
+    height: inherit; }
+    .sign-in .sign-in-block-1 .sign-in-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .sign-in .sign-in-block-2 {
+    width: 50%; }
+    .sign-in .sign-in-block-2 .form .txt-input {
+      margin-bottom: 2em;
+      width: 80%;
+      background: transparent;
+      border: none;
+      border-bottom: 1px black solid;
+      height: 2em; }
+    .sign-in .sign-in-block-2 .form .form-div {
+      margin: 0 auto;
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 2em; }
+      .sign-in .sign-in-block-2 .form .form-div a {
+        text-decoration: none; }
+    .sign-in .sign-in-block-2 .form button {
+      width: 20%;
+      height: 3em;
+      background: rgba(255, 255, 255, 0.15);
+      border: none;
+      font-size: 0.8em;
+      border: black 1px solid;
+      color: black;
+      cursor: pointer; }
+      .sign-in .sign-in-block-2 .form button:hover {
+        border: black 1px solid;
+        color: white;
+        background-color: black; }
 
 @font-face {
   font-family: roboto-mono;
