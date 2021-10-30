@@ -5,10 +5,9 @@
 @import "head.scss";
 @import "slider.scss";
 @import "./animations.scss";
-
+@import "signIn.scss";
 
 @font-face { font-family: roboto-mono;  src: url('Roboto_Mono/static/RobotoMono-Regular.ttf'); } 
-
 
 
 
@@ -47,4 +46,5 @@ footer> p{
 .icon:hover{
     filter: invert(0) hue-rotate(160deg);
 }
+
 

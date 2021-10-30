@@ -4,6 +4,7 @@
     overflow: hidden;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: -1;
 }
 
 .slider-image{
@@ -32,7 +33,6 @@
     color: black;
     animation: spin 1s cubic-bezier(0,.78,1,.39);
     transform-origin: top left;
-
 
 }
 
