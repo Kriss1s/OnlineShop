@@ -2,10 +2,10 @@
 @import "utilities.scss";
 @import "banner.scss";
 @import "gallery.scss";
-@import "head.scss";
+@import "./head.scss";
 @import "slider.scss";
 @import "./animations.scss";
-@import "signIn.scss";
+@import "./signIn.scss";
 
 @font-face { font-family: roboto-mono;  src: url('Roboto_Mono/static/RobotoMono-Regular.ttf'); } 
 
